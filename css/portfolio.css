@@ -1,0 +1,344 @@
+
+/* Mello studio */
+.portfolio-design-guideline-light, .portfolio-design-guideline-dark {
+    /* background: #FFFFFF; */
+    height: auto;
+    border: none;
+}
+.hero-img-mello {
+    padding: 0;
+    /* background-image: url(../images/mello-footer.png); */
+}
+
+.wireframe-section {
+    padding: 120px 0px 120px 0px;
+    position: relative;
+    /* background-color: #FF65AF10; */
+    /* opacity: 0.1; */
+    /* background: url(../images/mello-wireframe.png); */
+}
+.wireframe-title {
+    /* position: absolute; */
+    /* top: -1%; */
+    margin-top: 0;
+}
+.wireframe-text {
+    margin-bottom: -1.5rem;
+}
+.portfolio-hero-heading-container {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.portfolio-hero-heading-container::before {
+    content: none;
+}
+.portfolio-hero-heading-container::after {
+    content: none;
+}
+.portfolio-heading-text {
+    width: 50%;
+    margin-bottom: auto;
+}
+.portfolio-heading-image {
+    width: 50%;
+    margin-top: auto;
+}
+/* .section--150.bg---white.bottom--40.p_page.portfolio-hero-heading-section {
+    margin-bottom: 0;
+} */
+/* .section--150.top---60.wf-section.portfolio-below-hero-head-section {
+    margin-top: 0;
+} */
+/* End of Mello studio */
+
+/* mobile design */
+/* calm journal */
+
+.mobile-visual-design-image {
+    width: 100%;
+}
+.wireframe-header {
+    position: relative;
+    overflow: hidden;
+    height: 80px;
+    /* margin-top: 1.25rem; */
+}
+.wireframe-header::before {
+  border-radius: 100%;
+  position: absolute;
+  background: var(--wireframe-header-before-bgcolor);
+  right: -5.625rem;
+  left: -5.625rem;
+  top: 0;
+  content: '';
+  bottom: -8.5rem;
+}
+.wireframe-footer {
+    position: relative;
+    overflow: hidden;
+    height: 80px;
+    /* margin-bottom: 1.25rem; */
+}
+.wireframe-footer::after {
+  border-radius: 100%;
+  position: absolute;
+  background: var(--wireframe-footer-after-bgcolor);
+  right: -5.625rem;
+  left: -5.625rem;
+  top: -8.5rem;
+  content: '';
+  bottom: 0;
+}
+.portfolio-below-hero-head-section {
+    padding: 60px 0px;
+}
+/* End of calm journal */
+/* end of mobile design */
+
+.port-thumbnail-div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .portfolio-heading-container {
+        padding-left: 0;
+    }
+    .section--150.bg---white.bottom--40.p_page.portfolio-hero-heading-section {
+        margin-bottom: 0;
+    }
+    .section--150.top---60.wf-section.portfolio-below-hero-head-section {
+        margin-top: 0;
+    }
+    .calm-head-container {
+        gap: 68px;
+    }
+    .mobile-visual-design-image {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    .portfolio-heading-image img {
+        float: right;
+    }
+    .happening-mobile-container h2 {
+        margin-top: 24px;
+    }
+    .port-thumbnail-div {
+        padding: 1.5rem;
+    }
+}
+@media screen and (min-width: 500px) {
+    .calm-tags {
+        grid-template-columns: 0.25fr 0.25fr 0.25fr;
+    }
+    /* .portfolio-design-guideline-light-div {
+        width: auto;
+    } */
+    .portfolio-design-guideline-light-div img {
+        float: right;
+    }
+    .portfolio-design-guideline-dark-div img {
+        float: left;
+    }
+}
+@media (min-width:480px) and (max-width:768px) {
+    .portfolio-components-h2 {
+        margin-top: 24px;
+    }
+    .happening-mobile-container {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .wireframe-section {
+        padding: 60px 0px 60px 0px;
+    }
+    .portfolio-hero-heading-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .portfolio-heading-text {
+        align-items: center;
+        width: 100%;
+    }
+    .portfolio-heading-image {
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    .portfolio-below-hero-head-section {
+        padding: 30px 0px;
+    }
+    .wireframe-header {
+        height: 35px;
+        margin-top: 1.25rem;
+    } 
+    .wireframe-footer {
+        height: 35px;
+        margin-bottom: 1.25rem;
+    } 
+    .portfolio-heading-image img {
+        float: none;
+    }
+    .mobile-userflow-container-padding {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 0;
+        /* margin-bottom: ; */
+    }
+    .mobile-userflow-container-padding img {
+        margin-top: 0;
+    }
+    .wireframe-header::before {
+        bottom: -6.5rem;
+    }
+    .wireframe-footer::after {
+        bottom: 0rem;
+        /* bottom: -6.5rem; */
+    }    
+    .port-thumbnail-div {
+        padding: 1rem;
+    }
+}
+@media screen and (max-width: 479px) {
+    .portfolio-design-guideline-light, .portfolio-design-guideline-dark {
+        height: auto;
+    }
+    .wireframe-title {
+        padding-top: 0;
+    }
+    .wireframe-text {
+        margin-bottom: -0.5rem;
+    }
+    .wireframe-section {
+        padding: 40px 0px 40px 0px;
+    }
+    .portfolio-heading-tags {
+        display: flex;
+        flex-direction: row;
+    }
+    .mobile-visual-design-image {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .happening-mobile-container, .happening-mobile-container h2, .happening-mobile-component-image, .happening-mobile-illustrations-image {
+        margin-top: 0;
+    }
+    .wireframe-footer::after {
+        bottom: 0.5rem;
+    }
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/* case study */
+.casestudy-head-section {
+    background: #5488FF10;
+    /* opacity: 0.1; */
+    margin-top: 0;
+    padding-top: 6.25rem;
+    padding-bottom: 15.625rem; /* or 200px */
+}
+.container.casestudy-container {
+    background: transparent;
+}
+.casestudy-name {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #5488FF;
+}
+.casestudy-headline {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 61px;
+    text-align: center;
+    color: #1C1C28;
+    margin-bottom: 0.5rem;
+    max-width: 75%;
+    margin: auto;
+}
+.casestudy-subheadline {
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #8E90A6;
+    max-width: 58%;
+    margin: auto;
+}
+.casestudy-container {
+    display: flex;
+    /* max-width: 80%; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.description-section {
+    margin-top: -8.225rem;
+}
+.description-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left-description-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 25%;
+    padding: 40px;
+    background: #fff;
+}
+.left-description-data:last-child {
+    margin-bottom: 0;
+}
+.left-des-text {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.sub-description-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: flex-start;
+}
+.sub-description-text p {
+    margin-bottom: 0;
+}
+.sub-description-text .des-label {
+    margin-bottom: 0;
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 18px;
+    color: #8E90A6;
+}
+.sub-description-text .des-label-text {
+    margin-bottom: 0;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 23px;
+    color: #28293D;
+}
+
+
+
+
+/* End of case study */
+/* --------------------------------------------------- */
+

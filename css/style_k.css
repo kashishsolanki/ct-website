@@ -1,0 +1,210 @@
+.case-study-list-title {
+    max-width: 1000px;
+    font-weight: 500;
+    text-align: left;
+    font-size: 72px;
+    line-height: 91.08px;
+    margin-bottom: 24px;
+}
+.case-study-list-title .bottom-line {
+    color: #3F71FF;
+}
+.case-study-list-subtitle {
+    max-width: 850px;
+    color: #8E90A6;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+}
+.cs-section {
+    background-color: #121212;
+}
+.cs-box {
+    display: flex;
+    font-family: 'CircularStd';
+    flex-direction: row;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.12);
+    height: auto;
+    min-width: 490px;
+    transform: translate(0px, 0px);
+    transition: all 0.3s ease-in-out;
+    background: #13C5A2;
+    padding: 4%;
+    margin-top: 100px;
+}
+.cs-box-content {
+    width: 50%;
+}
+.cs-box-title {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 81px;
+}
+.cs-text {
+    margin-top: 24px;
+}
+.cs-text p {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+    font-size: 34px;
+}
+.cs-label {
+    background: rgba(28, 28, 40, 0.4);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 12px;
+    gap: 10px;
+    position: absolute;
+    width: auto;
+    height: 36px;
+    left: 52px;
+    top: 471px;
+}
+.cs-label label {
+    color: #FFD627;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 0.09em;
+}
+.cs-box:after {
+	content: '';
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	opacity: 0;
+	background-image: url(../images/arrow_outward-white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+	right: 65%;
+	top: 15%;
+	transition: all 0.5s;
+}
+.cs-box:hover:after{
+	width: 25.2px;
+	height: 25.2px;
+    right: 65%;
+	opacity: 1;
+    top: 15%;
+}
+.bg-resume {
+    background-color: #6648E5;
+}
+.bg-ezy {
+    background-color: #272727;
+}
+.bg-crm {
+    background-color: #E54878;
+}
+.bg-hrms {
+    background-color: #2B96F9;
+}
+.bg-gym {
+    background-color: #E56648;
+}
+.bg-wine {
+    background-color: #622B69;
+}
+
+.cs-border-title {
+    color: white;
+}
+.ts-main.cs-main .slick-arrow {
+    background: #1C1C28 url(../images/slider-arrow-white.svg) no-repeat center / 22px !important;
+    border: 1px solid #28293D !important;
+    border-radius: 100%;
+    top: -122px;
+    left: auto;
+    right: calc(calc(100vw - 1315px)/2);
+    transform: none;
+}
+.ts-main.cs-main .slick-arrow.slick-prev {
+    right: calc(calc(100vw - 1315px)/2 + 72px);
+    transform: rotate(180deg);
+}
+.ts-main.cs-main .slick-arrow.slick-disabled {
+    opacity: 0.5;
+}
+.ts-main.cs-main .slick-arrow::before {
+    display: none;
+}
+.white-color {
+    color: white !important;
+    margin-bottom: 8px !important;
+}
+.cs-main .ts-box .ts-text {
+    background: #1C1C28 !important;
+    border-radius: 20px;
+    border: 1px solid #28293D !important;
+}
+.cs-main .ts-box .ts-text::before {
+    background: #1C1C28 !important;
+}
+.cs-main .ts-box .ts-text::after {
+    background: #1C1C28 !important;
+    border: 1px solid #28293D !important;
+}
+
+.cs-footer {
+    background-color: #121212 !important;
+    margin-top: 0px !important;
+}
+.btn-right {
+    float: right !important;
+}
+@media screen and (max-width: 782px) {
+    .btn-right {
+        width: 100%;
+    }
+    .case-study-list-title {
+        text-align: center;
+        width: 300px;
+        margin: auto;
+        margin-bottom: 32px;
+    }
+    .case-study-list-subtitle {
+        text-align: center;
+        max-width: 95% !important;
+        margin: 0 auto !important;
+    }
+    .cs-border-title {
+        font-size: 34px !important;
+        font-weight: normal !important;
+    }
+    .cs-border-title::before {
+        height: 100% !important;
+    }
+    .cs-box {
+        flex-direction: column-reverse;
+        min-width: auto;
+    }
+    .cs-box-title {
+        margin-top: 24px;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 43px;
+    }
+    .cs-text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+    }
+    .cs-text p {
+        font-size: 20px;
+    }
+    .cs-label {
+        position: inherit !important;
+        width: max-content !important;
+        margin-top: 24px;
+    }
+    .cs-box-content {
+        width: 100%;
+    }
+}
